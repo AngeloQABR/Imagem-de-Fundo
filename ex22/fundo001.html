@@ -6,21 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste Imagem de fundo</title>
   <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 100vh;
+      background-image: url("imagens/wallpaper002.jpg");
+      background-size: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
     .quadrado{
       display: inline-block;
       border: 2px solid black;
       width: 200px;
       height: 200px;
       border-radius: 10px;
+      background-image: url("imagens/wallpaper002.jpg");
     }
     #q1{
-      background-color: lightblue;
+      background-position: left center;
     }
     #q2{
-      background: linear-gradient(180deg, yellow, red);
+      background-position: center center;
     }
     #q3{
-      background-image: url("imagens/pattern001.png");
+      background-position: right center;
     }
   </style>
 </head>
